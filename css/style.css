@@ -90,7 +90,7 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 48px;;
+    font-size: 46px;;
 }
 
 button {
@@ -144,6 +144,7 @@ button {
 .btn-container .btn-text {
     width: 65%;
     border: 1px solid #000000;
+    color: #000000;
 }
 
 .btn-container .btn-text:hover {
@@ -200,4 +201,8 @@ footer p {
     font-size: 14px;;
     color: #FFFBF1;
     
+}
+
+.nav-list {
+    display: none;
 }
