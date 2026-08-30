@@ -10,30 +10,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/media-query.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
 </head>
 <body>
     <header>
         <nav>
             <img src="/assets/logo.svg" alt="logo">
-            <img src="/assets/hamburger-menu.svg" alt="hamburger menu">
+            <img class="hide" src="/assets/hamburger-menu.svg" alt="hamburger menu">
+            <ul class="nav-list">
+                <li><a href="#">HOME</a></li>
+                 <li><a href="#">PROJECTS</a></li>
+                 <li><a href="#">SIDE QUESTS</a></li>
+                 <li><a href="#">CONTACT</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <section>
+        <section class="container">
+            <div class="box">
             <h1>
-                Hi, I'm Angelika your next front-end web developer
+                Hi, I'm Angelika <br> your next <span class="accent-font-style">front-end <br> web developer</span>
             </h1>
-            <p>Please take a look around, see what I've been up to, and let's see what we can build together.</p>
-            <button>I NEED A SITE <img src="/assets/arrow-right.svg" alt="arrow right"></button>
-            <button>I NEED A DEV <img src="/assets/arrow-right.svg" alt="arrow right"></button>
-        </section>
-        <section>
-            <div>
-                <img src="/assets/hero-image.svg" alt="hero image">
             </div>
+            <div class="box">
+            <p>Please take a look around, see what I've been up to, and let's see what we can build together.</p>
+            </div>
+            <div class="btns-container">
+                <div class="btn-container">
+                    <button class="btn btn-text">I NEED A SITE</button>
+                    <button class="btn btn-arrow"><img src="assets/arrow-right.svg" alt="arrow right"></button>
+                 </div>
+                 <div class="btn-container">
+                <button class="btn btn-text">I NEED A DEV</button>
+                <button class="btn btn-arrow"><img src="assets/arrow-right.svg" alt="arrow right"></button>
+            </div>
+            </div>
+        
+           
+        </section>
+        <section class="container contaimer-image">
+            <div class=" box rounded-border"></div>
+            <img src="assets/hero-image.svg" alt="hero image">
         </section>
     </main>
+    <footer>
+        <p>© Angelika Sowka 2026. All rights reserved.</p>
+    </footer>
 </body>
 </html>

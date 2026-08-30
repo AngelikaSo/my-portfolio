@@ -1,0 +1,62 @@
+@media (min-width: 1024px) {
+
+    main {
+        flex-direction: row;
+    }
+
+    .container {
+        width: 50%;
+    }
+
+    header, main {
+    padding: 30px;
+}
+
+
+.box {
+    padding: 40px 30px;
+}
+
+.contaimer-image .box {
+    height: 254.81px;
+}
+
+
+.btns-container {
+    flex-direction: row;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    line-height: 1px;
+}
+
+.nav-list li {
+    border: 1px solid #000;
+    padding: 0 30px;
+}
+
+.nav-list li + li {
+    border-left: 1px solid transparent;
+}
+
+.hide {
+    display: none;
+}
+
+.nav-list li:hover {
+    border: 1px solid #E36A6A;
+    border-radius: 30px;
+}
+
+.nav-list li:hover + li {
+    border-left: 1px solid #000;
+}
+
+}
