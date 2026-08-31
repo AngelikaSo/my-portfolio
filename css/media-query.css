@@ -146,10 +146,11 @@
   }
 
   .section-full-color img {
-    width: 80%;
+    width: 100%;
+    transform: translate(0, -50%);
   }
 
   footer {
-    margin-top: 3%;
+    margin-top: 2%;
   }
 }
