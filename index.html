@@ -1,61 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media-query.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <img src="assets/logo.svg" alt="logo">
-            <img class="hide" src="assets/hamburger-menu.svg" alt="hamburger menu">
-            <ul class="nav-list">
-                <li><a href="#">HOME</a></li>
-                 <li><a href="#">PROJECTS</a></li>
-                 <li><a href="#">SIDE QUESTS</a></li>
-                 <li><a href="#">CONTACT</a></li>
-            </ul>
-        </nav>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media-query.css" />
+  </head>
+  <body class="container-body">
+    <!-- HEADER -->
+    <header class="header">
+      <nav class="nav">
+        <img src="assets/logo.svg" alt="logo" />
+        <img
+          class="hide"
+          src="assets/hamburger-menu.svg"
+          alt="hamburger menu"
+        />
+        <ul class="nav-list">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">PROJECTS</a></li>
+          <li><a href="#">SIDE QUESTS</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
+    <!-- MAIN SECTION -->
+    <main class="container-main">
+      <section class="container-section">
         <section class="container">
-            <div class="box">
+          <div class="box">
             <h1>
-                Hi, I'm Angelika <br> your next <span class="accent-font-style">frontend <br> web developer</span>
+              Hi, I'm Angelika <br />
+              your next
+              <span class="accent-font-style"
+                >frontend <br />
+                web developer</span
+              >
             </h1>
+          </div>
+          <div class="box">
+            <p>
+              Please take a look around, see what I've been up to, and let's see
+              what we can build together.
+            </p>
+          </div>
+          <div class="btns-container">
+            <div class="btn-container">
+              <button class="btn btn-text">I NEED A SITE</button>
+              <button class="btn btn-arrow">
+                <img src="assets/arrow-right.svg" alt="arrow right" />
+              </button>
             </div>
-            <div class="box">
-            <p>Please take a look around, see what I've been up to, and let's see what we can build together.</p>
+            <div class="btn-container">
+              <button class="btn btn-text">I NEED A DEV</button>
+              <button class="btn btn-arrow">
+                <img src="assets/arrow-right.svg" alt="arrow right" />
+              </button>
             </div>
-            <div class="btns-container">
-                <div class="btn-container">
-                    <button class="btn btn-text">I NEED A SITE</button>
-                    <button class="btn btn-arrow"><img src="assets/arrow-right.svg" alt="arrow right"></button>
-                 </div>
-                 <div class="btn-container">
-                <button class="btn btn-text">I NEED A DEV</button>
-                <button class="btn btn-arrow"><img src="assets/arrow-right.svg" alt="arrow right"></button>
-            </div>
-            </div>
-        
-           
+          </div>
         </section>
-        <section class="container contaimer-image">
-            <div class=" box rounded-border"></div>
-            <img src="assets/hero-image.svg" alt="hero image">
+        <section class="container container-image container-image-hero">
+          <div class="box rounded-border"></div>
+          <img src="assets/hero-image.svg" alt="hero image" />
         </section>
+      </section>
     </main>
+    <!-- FOOTER  -->
     <footer>
-        <p>© Angelika Sowka 2026. All rights reserved.</p>
+      <p>© Angelika Sowka 2026. All rights reserved.</p>
     </footer>
-</body>
+  </body>
 </html>
