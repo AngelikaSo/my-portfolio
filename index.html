@@ -16,42 +16,43 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/media-query.css" />
+    <link rel="stylesheet" href="css/global.css" />
   </head>
   <body class="container-body">
     <!-- HEADER -->
     <header class="header">
       <nav class="nav">
-        <img src="assets/logo.svg" alt="logo" />
+        <a href="index.html">
+          <img src="assets/logo.svg" alt="logo" />
+        </a>
         <img
-          class="hide"
+          class="hamburger-menu"
           src="assets/hamburger-menu.svg"
           alt="hamburger menu"
         />
         <ul class="nav-list">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">PROJECTS</a></li>
-          <li><a href="#">SIDE QUESTS</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="projects.html">PROJECTS</a></li>
+          <li><a href="side-quests.html">SIDE QUESTS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
         </ul>
       </nav>
     </header>
     <!-- MAIN SECTION -->
-    <main class="container-main">
-      <section class="container-section">
-        <section class="container">
-          <div class="box">
+    <main>
+      <section class="section intro">
+        <div class="intro-content">
+          <div class="container">
             <h1>
               Hi, I'm Angelika <br />
               your next
-              <span class="accent-font-style"
+              <span
                 >frontend <br />
                 web developer</span
               >
             </h1>
           </div>
-          <div class="box">
+          <div class="container">
             <p>
               Please take a look around, see what I've been up to, and let's see
               what we can build together.
@@ -73,11 +74,13 @@
               </a>
             </div>
           </div>
-        </section>
-        <section class="container container-image container-image-hero">
-          <div class="box rounded-border"></div>
-          <img src="assets/hero-image.svg" alt="hero image" />
-        </section>
+        </div>
+        <div class="intro-image">
+          <div class="container container-rounded container-intro-image"></div>
+          <div>
+            <img src="assets/hero-image.svg" alt="hero image" />
+          </div>
+        </div>
       </section>
     </main>
     <!-- FOOTER  -->

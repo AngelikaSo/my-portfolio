@@ -132,6 +132,21 @@ table {
   box-sizing: border-box;
 }
 
+:root {
+  --color-primary: #e36a6a;
+  --color-text: #000;
+  --color-light: #fffbf1;
+  --color-accent--1: #ffe9f8;
+  --color-accent--2: #fff2d0;
+  --color-accent--3: #ffe4c6;
+
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+
+  --container-width: 1240px;
+}
+
 body {
   font-family: "Work Sans", sans-serif;
   font-size: 24px;
@@ -198,6 +213,10 @@ h1 {
   min-width: 100px;
   padding: 40px 10px;
   margin-bottom: -1px;
+}
+
+.box.box-contact {
+  margin-bottom: 0;
 }
 
 .box::first-child {
@@ -430,7 +449,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
+  width: 24px;
   height: auto;
 }
 
@@ -440,6 +459,7 @@ h2 {
 
 .social-link--container a {
   color: #000;
+  font-size: 20px;
 }
 
 .one-column-box--border {
@@ -450,4 +470,24 @@ h2 {
 
 .pink-accent {
   background-color: #ffe9f8;
+}
+
+/* ========== CONTACT PAGE ========== */
+
+.section-container--contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact-columns--2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact-columns--1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
