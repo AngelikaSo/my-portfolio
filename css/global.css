@@ -184,7 +184,7 @@ h2 {
 /* HEADER */
 
 .header {
-  padding: 10px;
+  padding: 30px;
 }
 
 .header nav {
@@ -346,6 +346,11 @@ footer p {
   display: flex;
 }
 
+.intro-content h1 span {
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
 .intro-image {
   position: relative;
   margin-top: 30px;
@@ -437,7 +442,7 @@ footer p {
 .projects {
   flex-direction: column;
   gap: 20px;
-  padding: 30px 0 0 0;
+  padding: 30px 0;
 }
 
 .btn-container--projects {
@@ -450,9 +455,11 @@ footer p {
   height: 40px;
 }
 
+/*
 .btn-container--projects .btn-text {
   transform: scaleX(-1);
 }
+  */
 
 .projects .section-title {
   display: flex;
@@ -463,31 +470,126 @@ footer p {
 .projects-content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
+  align-items: stretch;
 }
 
 .project {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  height: 100%;
 }
 
 .project > h5 {
   font-weight: 500;
 }
 
-.project > img {
-  width: 100%;
-}
-
 .projects-content .project .btn-container {
   display: flex;
   width: min(80%, 400px);
+  margin-top: auto;
+}
+
+.project > img,
+.project > video {
+  width: 100%;
+}
+
+.need-website .project > img,
+.need-website .project > video {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  max-height: 354px;
 }
 
 /* CONTACT SECTION IN NEED DEV PAGE */
 .contact-dev > .container:first-child {
   background-color: var(--color-accent--1);
+}
+
+/* ======= NEED WEBSITE STYLES ====== */
+.need-website .contact > .container:first-child,
+.need-website .need-dev .container,
+.need-website .about {
+  background-color: var(--color-accent--2);
+}
+
+/* ====== SIDE QUESTS PAGE ======= */
+.tags-container {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: 5px 10px;
+  border: 1px solid #000;
+  border-radius: 30px;
+}
+
+.side .projects h5 a:hover {
+  color: var(--color-primary);
+}
+
+/* ========= ACCORDEON ========== */
+summary::marker {
+  content: "";
+}
+
+summary {
+  position: relative;
+  anchor-name: --summary;
+  font-weight: 500;
+
+  &::marker {
+    content: "";
+  }
+
+  &::before,
+  &::after {
+    /* Custom marker dimensions */
+    content: "";
+    border-block-start: 2px solid var(--color-primary);
+    height: 0;
+    width: 10px;
+
+    /* Positions the lines */
+    inset-block-start: 50%;
+    inset-inline-end: 0;
+
+    /* Anchor the shape to the summary */
+    position: absolute;
+    position-anchor: --summary;
+    position-area: top end;
+  }
+
+  /* Rotate just the ::after line to create a "+"" shape */
+  &::after {
+    transform: rotate(90deg);
+    transform-origin: 50%;
+  }
+}
+
+/* Rotate the line when open */
+details[open] summary::after {
+  transform: rotate(0deg);
+}
+
+details {
+  padding: 30px;
+  border: 1px solid var(--color-text);
+  margin-bottom: -1px;
+}
+
+details[open] {
+  background-color: var(--color-accent--2);
+  border-radius: 30px;
+}
+
+details[open] p {
+  padding-top: 10px;
 }
 
 @media (min-width: 1024px) {
@@ -499,10 +601,6 @@ footer p {
 
   .hamburger-menu {
     display: none;
-  }
-
-  .header {
-    padding: 30px;
   }
 
   .nav-list a {
@@ -632,9 +730,16 @@ footer p {
     margin-top: 0;
   }
 
-  .container-tech-image {
+  .container .container-tech-image {
+    height: auto;
+    padding: 30px;
+  }
+
+  /*
+  .need-website .container-tech-image {
     height: 472px;
   }
+    */
 
   /* PROJECTS SECTION DESKTOP */
 
@@ -646,17 +751,28 @@ footer p {
     flex-direction: row;
   }
 
+  .project {
+    flex: 1 1 0;
+  }
+
   /* ======= NEED WEBSITE STYLES ====== */
 
+  /*
   .need-website .tech-image .container {
     height: 650px;
   }
-}
 
-/* ======= NEED WEBSITE STYLES ====== */
-.need-website .tech-content > .container:first-child,
-.need-website .contact > .container:first-child,
-.need-website .need-dev .container,
-.need-website .about {
-  background-color: var(--color-accent--2);
+  */
+
+  /* ====== SIDE QUESTS ======= */
+
+  .side-quests {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .side-quests .container {
+    width: 50%;
+    padding: 60px;
+  }
 }
