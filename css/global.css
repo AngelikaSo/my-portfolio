@@ -446,13 +446,17 @@ footer p {
 }
 
 .btn-container--projects {
-  width: 30%;
+  width: auto;
+  flex-shrink: 0;
 }
 
 .btn-container--projects .btn-text,
 .btn-container--projects .btn-arrow {
-  width: 50%;
   height: 40px;
+  padding: 0 10px;
+}
+.btn-container .btn-text {
+  white-space: nowrap;
 }
 
 /*
@@ -465,6 +469,8 @@ footer p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 
 .projects-content {
@@ -534,45 +540,42 @@ footer p {
 }
 
 /* ========= ACCORDEON ========== */
-summary::marker {
-  content: "";
-}
 
 summary {
   position: relative;
   anchor-name: --summary;
   font-weight: 500;
+  list-style: none;
 
   &::marker {
     content: "";
   }
 
+  &::-webkit-details-marker {
+    display: none;
+  }
+
   &::before,
   &::after {
-    /* Custom marker dimensions */
     content: "";
     border-block-start: 2px solid var(--color-primary);
     height: 0;
     width: 10px;
 
-    /* Positions the lines */
     inset-block-start: 50%;
     inset-inline-end: 0;
 
-    /* Anchor the shape to the summary */
     position: absolute;
     position-anchor: --summary;
     position-area: top end;
   }
 
-  /* Rotate just the ::after line to create a "+"" shape */
   &::after {
     transform: rotate(90deg);
     transform-origin: 50%;
   }
 }
 
-/* Rotate the line when open */
 details[open] summary::after {
   transform: rotate(0deg);
 }
@@ -733,6 +736,10 @@ details[open] p {
   .container .container-tech-image {
     height: auto;
     padding: 30px;
+  }
+
+  .btn-container--projects {
+    width: 30%;
   }
 
   /*
