@@ -837,7 +837,8 @@ details[open] p {
   }
   */
 
-  details > summary {
+  details > summary,
+  details summary::-webkit-details-marker {
     cursor: pointer;
   }
 
