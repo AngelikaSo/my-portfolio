@@ -835,8 +835,11 @@ details[open] p {
   .need-website .tech-image .container {
     height: 650px;
   }
-
   */
+
+  details > summary {
+    cursor: pointer;
+  }
 
   /* ====== SIDE QUESTS ======= */
 
